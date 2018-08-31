@@ -229,7 +229,7 @@
 			this.Controls.Add(this.tb_Regex);
 			this.Controls.Add(this.label1);
 			this.Name = "Form1";
-			this.Text = "IncrementalRegexReplace";
+			this.Text = "IncrementalRegexReplace ";
 			this.tc_Tabs.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage2.ResumeLayout(false);
