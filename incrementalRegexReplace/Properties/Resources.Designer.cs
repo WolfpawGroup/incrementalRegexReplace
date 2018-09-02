@@ -61,6 +61,45 @@ namespace incrementalRegexReplace.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (?&lt;i_0&gt;{{STRING}}).
+        /// </summary>
+        internal static string _s_CaptureToken {
+            get {
+                return ResourceManager.GetString("_s_CaptureToken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap day_code {
+            get {
+                object obj = ResourceManager.GetObject("day_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap night_code {
+            get {
+                object obj = ResourceManager.GetObject("night_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap p {
+            get {
+                object obj = ResourceManager.GetObject("p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap question_24 {
