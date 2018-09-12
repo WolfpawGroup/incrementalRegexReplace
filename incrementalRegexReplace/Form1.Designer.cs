@@ -59,6 +59,7 @@
 			this.p_Help = new System.Windows.Forms.Panel();
 			this.btn_X = new System.Windows.Forms.Button();
 			this.p_BtnHolder = new System.Windows.Forms.Panel();
+			this.btn_CheckRegexMatches = new System.Windows.Forms.Button();
 			this.cms_Regex.SuspendLayout();
 			this.tc_Tabs.SuspendLayout();
 			this.tp_Original.SuspendLayout();
@@ -274,7 +275,7 @@
 			this.btn_Copy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
 			this.btn_Copy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
 			this.btn_Copy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_Copy.Location = new System.Drawing.Point(139, 475);
+			this.btn_Copy.Location = new System.Drawing.Point(234, 475);
 			this.btn_Copy.Name = "btn_Copy";
 			this.btn_Copy.Size = new System.Drawing.Size(75, 23);
 			this.btn_Copy.TabIndex = 8;
@@ -289,7 +290,7 @@
 			this.btn_Clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
 			this.btn_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
 			this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_Clear.Location = new System.Drawing.Point(347, 475);
+			this.btn_Clear.Location = new System.Drawing.Point(442, 475);
 			this.btn_Clear.Name = "btn_Clear";
 			this.btn_Clear.Size = new System.Drawing.Size(75, 23);
 			this.btn_Clear.TabIndex = 9;
@@ -380,7 +381,7 @@
 			this.btn_Save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
 			this.btn_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
 			this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_Save.Location = new System.Drawing.Point(216, 475);
+			this.btn_Save.Location = new System.Drawing.Point(311, 475);
 			this.btn_Save.Name = "btn_Save";
 			this.btn_Save.Size = new System.Drawing.Size(75, 23);
 			this.btn_Save.TabIndex = 16;
@@ -446,12 +447,30 @@
 			this.p_BtnHolder.Tag = "x";
 			this.p_BtnHolder.Visible = false;
 			// 
+			// btn_CheckRegexMatches
+			// 
+			this.btn_CheckRegexMatches.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btn_CheckRegexMatches.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_CheckRegexMatches.Enabled = false;
+			this.btn_CheckRegexMatches.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+			this.btn_CheckRegexMatches.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.btn_CheckRegexMatches.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+			this.btn_CheckRegexMatches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_CheckRegexMatches.Location = new System.Drawing.Point(96, 475);
+			this.btn_CheckRegexMatches.Name = "btn_CheckRegexMatches";
+			this.btn_CheckRegexMatches.Size = new System.Drawing.Size(98, 23);
+			this.btn_CheckRegexMatches.TabIndex = 19;
+			this.btn_CheckRegexMatches.Text = "Check Matches";
+			this.btn_CheckRegexMatches.UseVisualStyleBackColor = true;
+			this.btn_CheckRegexMatches.Click += new System.EventHandler(this.btn_CheckRegexMatches_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
 			this.ClientSize = new System.Drawing.Size(804, 510);
+			this.Controls.Add(this.btn_CheckRegexMatches);
 			this.Controls.Add(this.p_BtnHolder);
 			this.Controls.Add(this.btn_Save);
 			this.Controls.Add(this.numericUpDown3);
@@ -521,6 +540,7 @@
 		private System.Windows.Forms.WebBrowser wb_Help;
 		private System.Windows.Forms.Button btn_X;
 		private System.Windows.Forms.Panel p_BtnHolder;
+		private System.Windows.Forms.Button btn_CheckRegexMatches;
 	}
 }
 

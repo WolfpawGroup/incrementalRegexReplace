@@ -396,5 +396,26 @@ namespace incrementalRegexReplace
 				}
 			}
 		}
+
+		private void btn_CheckRegexMatches_Click(object sender, EventArgs e)
+		{
+			if (Properties.Settings.Default.s_RegexHistory.Contains(tb_Regex.Text))
+			{
+				Properties.Settings.Default.s_RegexHistory.Remove(tb_Regex.Text);
+			}
+			Properties.Settings.Default.s_RegexHistory.Insert(0, tb_Regex.Text);
+			Properties.Settings.Default.s_RecentHistory.Clear();
+			Properties.Settings.Default.s_RecentHistory.AddRange(Properties.Settings.Default.s_RegexHistory.Cast<string>().TakeWhile(x => Properties.Settings.Default.s_RegexHistory.IndexOf(x) < 10).ToArray());
+			Properties.Settings.Default.Save();
+
+			string str = rtb_Original.Text;
+			
+			RichTextBox tb = FromHandle(createNewTab(++tabId)) as RichTextBox;
+			if (tb != null)
+			{
+				tb.Text = myRegex.replaceRegex(str, tb_Regex.Text, (int)numericUpDown1.Value, (int)numericUpDown2.Value, (int)numericUpDown3.Value);
+				tc_Tabs.SelectedTab = tb.Parent as TabPage;
+			}
+		}
 	}
 }
